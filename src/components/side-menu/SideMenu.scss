@@ -1,0 +1,27 @@
+.sideMenu {
+  .MuiDrawer-root {
+    .MuiDrawer-paper {
+      top: 58px;
+      .MuiListItemIcon-root {
+        min-width: 35px;
+        svg {
+          height: 20px;
+          width: 20px;
+        }
+      }
+      .MuiTypography-root {
+        font-size: 15px;
+        color: #666;
+      }
+      .MuiButtonBase-root {
+        padding: 3px 20px;
+      }
+    }
+  }
+  &-title {
+    font-size: 15px !important;
+    color: #666 !important;
+    padding: 12px 20px 0;
+    text-align: left;
+  }
+}

@@ -1,0 +1,323 @@
+.smallTitle {
+  font-size: 16px !important;
+  color: #666 !important;
+  padding: 0;
+  text-align: left;
+  margin: 0;
+  font-weight: 700 !important;
+}
+
+.projectCard {
+  background: #fff;
+  border: 1px solid #ed8154;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  &__head {
+    border-bottom: 1px solid #ed8154;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__Name {
+    font-size: 16px !important;
+    color: #666 !important;
+    margin: 0;
+  }
+  &__headIcons {
+    display: flex;
+    align-items: center;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 24px;
+      width: 24px;
+      cursor: pointer;
+      margin-left: 10px;
+      svg {
+        height: 20px;
+        width: 20px;
+        color: #ed8154;
+      }
+    }
+  }
+  &__body {
+    display: flex;
+  }
+  &__info {
+    padding: 15px;
+    margin: 0;
+    list-style-type: none;
+    border-right: 1px solid #ed8154;
+    width: 72%;
+    background: #fcf6ef;
+    &-item {
+      font-size: 14px !important;
+      color: #666 !important;
+      margin: 0 0 10px;
+      text-align: left;
+      span {
+        font-weight: 600;
+        width: 125px;
+        display: inline-block;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &__selectBlock {
+    width: 28%;
+    padding: 15px;
+  }
+  &__selectBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 8px;
+    cursor: pointer;
+    &-text {
+      font-size: 14px !important;
+      color: #ed8154;
+      font-weight: 600 !important;
+    }
+    svg {
+      height: 20px;
+      width: 20px;
+      color: #ed8154;
+    }
+    &:last-child {
+      margin: 0;
+      .projectCard__selectBox-text {
+        color: #9a2a2a;
+      }
+      svg {
+        color: #9a2a2a;
+      }
+    }
+  }
+}
+
+.paginationBlock {
+  .MuiPagination-ul {
+    li {
+      margin: 0 1px;
+    }
+    .MuiButtonBase-root,
+    .MuiPaginationItem-ellipsis {
+      margin: 0 !important;
+      background: #fff;
+      border-radius: 0;
+      border: none;
+      font-size: 14px;
+      color: #666;
+      font-weight: 600;
+      line-height: 24px;
+      height: 32px;
+      width: 32px;
+      &.Mui-selected {
+        background: #ed8154;
+        color: #fff;
+      }
+      &.Mui-disabled {
+        opacity: 100%;
+      }
+    }
+  }
+}
+
+.projectFilterBlock {
+  .MuiFormControl-root {
+    width: 100%;
+    margin: 0;
+    .MuiSelect-select {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      height: 42px;
+      box-sizing: border-box;
+      padding: 10px 15px;
+      text-align: left;
+      font-size: 15px;
+      color: #666;
+      font-weight: 600;
+      em {
+        font-style: normal;
+      }
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border: none;
+    }
+  }
+}
+
+.projectSearchBlock {
+  .searchBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    input {
+      border: none;
+      background: #fff;
+      height: 42px;
+      box-sizing: border-box;
+      padding: 10px 15px;
+      text-align: left;
+      font-size: 15px;
+      color: #666;
+      font-weight: 600;
+      width: 100%;
+      padding-right: 40px;
+      &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    &-btn {
+      height: 42px;
+      width: 42px;
+      background: #ed8154;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 42px;
+      top: 0;
+      bottom: 0;
+      svg {
+        position: absolute;
+        height: 24px;
+        width: 24px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.headButtons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  button {
+    background: #ed8154;
+    border: 1px solid #ed8154;
+    font-size: 14px !important;
+    color: #fff;
+    text-transform: capitalize;
+    min-width: 225px;
+    height: 42px;
+    font-weight: 700;
+    border-radius: 12px;
+    &:hover {
+      background: #fff;
+      color: #ed8154;
+    }
+  }
+  .iconButton {
+    min-width: 42px;
+    margin-right: 15px;
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
+.pageBreadcrumb {
+  .MuiBreadcrumbs-ol {
+    .MuiBreadcrumbs-separator {
+      display: none;
+    }
+    .MuiBreadcrumbs-li {
+      margin-right: 8px;
+      a {
+        background-color: #fff;
+      }
+      .MuiTypography-root {
+        background: #ed8154;
+        border: 1px solid #ed8154;
+        font-size: 13px !important;
+        color: #fff;
+        text-transform: capitalize;
+        min-width: 120px;
+        height: 42px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &::after {
+          content: "";
+          background: #ed8154;
+          border-right: 1px solid #ed8154;
+          border-top: 1px solid #ed8154;
+          height: 30px;
+          width: 30px;
+          display: block;
+          transform: rotate(45deg);
+          position: absolute;
+          right: -16px;
+        }
+        &::before {
+          content: "";
+          background: #e4e4e4;
+          height: 35px;
+          width: 35px;
+          display: block;
+          transform: rotate(45deg);
+          position: absolute;
+          right: -22px;
+          z-index: 0;
+        }
+      }
+      .MuiLink-root {
+        background: #fff;
+        border: 1px solid #ed8154;
+        font-size: 13px !important;
+        color: #ed8154;
+        text-transform: capitalize;
+        min-width: 90px;
+        height: 42px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        &::after {
+          content: "";
+          background: #fff;
+          border-right: 1px solid #ed8154;
+          border-top: 1px solid #ed8154;
+          height: 30px;
+          width: 30px;
+          display: block;
+          transform: rotate(45deg);
+          position: absolute;
+          right: -16px;
+        }
+        &::before {
+          content: "";
+          background: #e4e4e4;
+          height: 35px;
+          width: 35px;
+          display: block;
+          transform: rotate(45deg);
+          position: absolute;
+          right: -22px;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
